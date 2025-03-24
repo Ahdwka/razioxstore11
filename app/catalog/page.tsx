@@ -41,7 +41,7 @@ export default function Catalog() {
         : await supabase
             .from("laptops")
             .select("*")
-            .order("order", { ascending: false });
+            .order("order", { ascending: true });
 
       const data = _query.data;
 
